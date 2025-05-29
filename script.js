@@ -6,7 +6,7 @@ document.getElementById("lucky-btn").addEventListener("click", () => {
     ? "./img/logo/google-logo.png"
     : "./img/logo/oddity-logo.png";
 
-  logo.style.transition = "opacity 0.3s";
+  logo.style.transition = "opacity 0.15s";
   logo.style.opacity = 0;
 
   setTimeout(() => {
@@ -16,7 +16,8 @@ document.getElementById("lucky-btn").addEventListener("click", () => {
     img.onload = () => {
       logo.src = newSrc;
       logo.style.opacity = 1;
+      logo.style.transition = "opacity 0.15s";
       logoSwitched = !logoSwitched;
     };
-  }, 300);
+  }, 150);
 });
