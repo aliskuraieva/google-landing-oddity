@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="top-right">
+          <a href="#">Gmail</a>
+          <a href="#">Зображення</a>
+
+          <button class="icon-button dots-grid-icon" aria-label="Меню додатків">
+            <svg class="icon" aria-hidden="true" width="24" height="24">
+              <use href="./img/icons.svg#dots-grid-icon"></use>
+            </svg>
+          </button>
+
+          <button class="signin">Увійти</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <img
+          class="logo"
+          id="logo"
+          src="./img/logo/google-logo.png"
+          alt="Google Logo"
+        />
+
+        <div class="search-wrapper">
+          <div class="search-box">
+            <button class="icon-button search-icon" aria-label="Пошук">
+              <svg class="icon" aria-hidden="true" width="20" height="20">
+                <use href="./img/icons.svg#search-icon"></use>
+              </svg>
+            </button>
+
+            <input type="text" />
+
+            <div class="right-icons">
+              <div class="tooltip-container">
+                <button class="icon-button" aria-label="Транслітерація">
+                  <svg class="icon" aria-hidden="true" width="24" height="24">
+                    <use href="./img/icons.svg#keyboard-icon"></use>
+                  </svg>
+                </button>
+                <span class="tooltip-text">Транслітерація</span>
+              </div>
+
+              <div class="tooltip-container">
+                <button class="icon-button" aria-label="Голосовий пошук">
+                  <svg class="icon" aria-hidden="true" width="24" height="24">
+                    <use href="./img/icons.svg#mic-icon"></use>
+                  </svg>
+                </button>
+                <span class="tooltip-text">Пошук голосом</span>
+              </div>
+
+              <div class="tooltip-container">
+                <button class="icon-button" aria-label="Камера">
+                  <svg class="icon" aria-hidden="true" width="24" height="24">
+                    <use href="./img/icons.svg#camera-icon"></use>
+                  </svg>
+                </button>
+                <span class="tooltip-text">Пошук за зображенням</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="buttons">
+            <button class="input-btn" id="searchBtn">Пошук Google</button>
+            <button class="input-btn" id="lucky-btn">Мені пощастить</button>
+          </div>
+
+          <div class="lang">Мова Google: <a href="#">English</a></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="country">Україна</div>
+        <div class="footer-links">
+          <div>
+            <a href="#">Про Google</a>
+            <a href="#">Реклама</a>
+            <a href="#">Для бізнесу</a>
+            <a href="#">Як працює Пошук</a>
+          </div>
+          <div>
+            <a href="#">Конфіденційність</a>
+            <a href="#">Умови</a>
+            <a href="#">Налаштування</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
